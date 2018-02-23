@@ -18,7 +18,7 @@ public class Chest : MonoBehaviour {
 
 	void Update()
 	{
-		Debug.Log(chestAnimation.clip.length);
+
 	}
 
 	private void OpenChest()
