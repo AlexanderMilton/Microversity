@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec070afe0e8f4181a1b177d5ceb9ff0, type: 3}
   m_Name: MergeConfigurationFile
   m_EditorClassIdentifier: 
-  licenseKey: C53FD56954A42af59C0b+a4930683834FC1B5ef387a+3A164b/1F8Ca84Def19e14a7b-Bb49BFB18Ae5909029aFc46FB64984BcDf-66E1B9cEb9F15a+746b4a/1e769A9A0A4+1Cf0EB7434cfB/A37/c+c94+3152EDcFA0D22+643F21AA/ea600E60c6742317+0aB4-KpFt1ov1T1pl0e4sgXj
+  licenseKey: 
   scaleFactor: 0
   customScaleFactor: 1
   chosenScaleFactor: 1
