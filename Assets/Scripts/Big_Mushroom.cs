@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class Big_Mushroom : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+	private Animator animator;
+	public string clickMushroomAnimation;
+	public string resetMushroomAnimation;
 
+	public bool isPressed;
+	
+	void Start ()
+	{
+		animator = GetComponent<Animator>();
+		isPressed = false;
 	}
 
 	public void Clicked()
 	{
-		
+		if (!isPressed)
+			PressMushroom();
+		else
+			ResetMushroom();
+	}
+
+	private void PressMushroom()
+	{
+		isPressed = true;
+		animator.Play(clickMushroomAnimation);
+	}
+
+	public void ResetMushroom()
+	{
+		isPressed = false;
+		animator.Play(resetMushroomAnimation);
 	}
 }

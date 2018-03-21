@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 114378235371647322}
   - component: {fileID: 65052885943629520}
   - component: {fileID: 95132241764867578}
-  - component: {fileID: 111812127339262552}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -70,15 +69,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1441072526667354}
-  m_LocalRotation: {x: -0.0000004157555, y: -0.8578355, z: 0.00000023729997, w: 0.5139245}
-  m_LocalPosition: {x: -0.825, y: -0.18812, z: -1.448}
-  m_LocalScale: {x: 0.90842426, y: 0.9084239, z: 0.9084243}
+  m_LocalRotation: {x: -0.00000012618793, y: -0.24318348, z: 0.00000046178013, w: 0.96998036}
+  m_LocalPosition: {x: -0.0717, y: 0.7514, z: 0.7107}
+  m_LocalScale: {x: 0.109010905, y: 0.10901087, z: 0.10901093}
   m_Children:
   - {fileID: 4947889801154562}
   - {fileID: 4536800402162344}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -118.149, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -28.149002, z: 0}
 --- !u!4 &4536800402162344
 Transform:
   m_ObjectHideFlags: 1
@@ -216,20 +215,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &111812127339262552
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441072526667354}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e82cf5fd8b4c1a74fb258e0e3c9d1021, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114378235371647322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8405087a6a26f43a7b7aa730e0ee0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openChestAnimation: 
-  closeChestAnimation: 
   animator: {fileID: 95132241764867578}
-  chestAnimation: {fileID: 111812127339262552}
+  chestAnimation: {fileID: 0}
+  openChestAnimation: OpenChest
+  closeChestAnimation: CloseChest

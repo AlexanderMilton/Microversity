@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour {
 
+	private Animator animator;
 	public string openChestAnimation;
 	public string closeChestAnimation;
-	public Animator animator;
-	public Animation chestAnimation;
 
-	private bool isOpen = false;
+	private bool isOpen;
 
 	void Start()
 	{
 		animator = GetComponent<Animator>();
+		isOpen = false;
 	}
 
-	void Update()
+	public void Clicked()
 	{
-
+		if (!isOpen)
+			OpenChest();
+		else
+			CloseChest();
 	}
 
 	private void OpenChest()
@@ -27,16 +30,10 @@ public class Chest : MonoBehaviour {
 		animator.Play(openChestAnimation);
 	}
 
-	//private IEnumerator CloseChest()
-	//{
-	//	animator.Play(closeChestAnimation);
-	//	yield return new WaitForSeconds(chestAnimation.clip.length);
-	//}
-
-	public void Clicked()
+	private void CloseChest()
 	{
-		if (!isOpen)
-			OpenChest();
+		isOpen = false;
+		animator.Play(closeChestAnimation);
 	}
 }
 

@@ -20,7 +20,7 @@ public class ClickEvent : MonoBehaviour {
 		{
 			if (Physics.Raycast(ray, out hit))
 			{
-				//Debug.Log(" you clicked on " + hit.collider.gameObject.name);
+				Debug.Log(" you clicked on " + hit.collider.gameObject.name);
 
 				hit.collider.gameObject.SendMessage("Clicked");
 			}
